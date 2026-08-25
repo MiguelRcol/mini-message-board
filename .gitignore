@@ -8,3 +8,6 @@ coverage/
 dist/
 .wrangler/
 *.tsbuildinfo
+
+# Local Netlify folder
+.netlify

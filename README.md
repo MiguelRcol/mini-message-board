@@ -2,7 +2,10 @@
 
 A small, friendly message board built with Express and EJS. Visitors can read the latest posts, add a message of their own, and open any message on a dedicated detail page.
 
-**Live preview:** [https://miguelrcol.github.io/mini-message-board/](https://miguelrcol.github.io/mini-message-board/)
+## Live deployments
+
+- [GitHub Pages](https://miguelrcol.github.io/mini-message-board/)
+- [Netlify](https://mini-message-board-miguelrcol.netlify.app/)
 
 ## Features
 
