@@ -2,6 +2,8 @@
 
 A small, friendly message board built with Express and EJS. Visitors can read the latest posts, add a message of their own, and open any message on a dedicated detail page.
 
+**Live preview:** [https://miguelrcol.github.io/mini-message-board/](https://miguelrcol.github.io/mini-message-board/)
+
 ## Features
 
 - Server-rendered message list with author, text, and timestamp

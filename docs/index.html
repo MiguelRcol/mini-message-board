@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A friendly little message board for sharing thoughts." />
+    <meta property="og:title" content="Mini Message Board | Echo" />
+    <meta property="og:description" content="Leave a thought. Start an echo." />
+    <meta property="og:image" content="https://miguelrcol.github.io/mini-message-board/og.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://miguelrcol.github.io/mini-message-board/" />
+    <title>Mini Message Board | Echo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body data-page="index">
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="Echo message board home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>echo</span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a class="nav-link" href="./">Messages</a>
+          <a class="button button-small" href="./new.html"><span aria-hidden="true">+</span> New message</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Community board</p>
+            <h1 id="page-title">Leave a thought.<br /><em>Start an echo.</em></h1>
+            <p class="hero-intro">A tiny corner of the internet for hellos, ideas, and everything in between.</p>
+            <a class="button button-primary" href="./new.html">Write a message <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orb orb-large"></div>
+            <div class="orb orb-medium"></div>
+            <div class="orb orb-small"></div>
+            <div class="spark spark-one">✦</div>
+            <div class="spark spark-two">✦</div>
+            <div class="hero-note">say<br />something<br /><strong>kind</strong></div>
+          </div>
+        </section>
+
+        <section class="messages-section" aria-labelledby="latest-heading">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span></span> From the community</p>
+              <h2 id="latest-heading">Latest echoes</h2>
+            </div>
+            <p class="message-count"><strong id="message-count">0</strong> messages shared</p>
+          </div>
+          <div class="message-grid" id="message-grid"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Small messages, shared openly.</p>
+        <p>Built with Express + EJS</p>
+      </footer>
+    </div>
+  </body>
+</html>

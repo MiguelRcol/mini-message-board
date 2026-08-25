@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Read a message shared on Echo." />
+    <title>Message detail | Echo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body data-page="message">
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="Echo message board home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>echo</span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a class="nav-link" href="./">Messages</a>
+          <a class="button button-small" href="./new.html"><span aria-hidden="true">+</span> New message</a>
+        </nav>
+      </header>
+
+      <main id="message-detail"></main>
+
+      <footer class="site-footer">
+        <p>Small messages, shared openly.</p>
+        <p>Built with Express + EJS</p>
+      </footer>
+    </div>
+  </body>
+</html>
