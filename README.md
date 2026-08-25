@@ -34,10 +34,9 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-The production build is also configured for OpenAI Sites. The hosted version
-uses browser storage so each visitor can try the full message flow without a
-database, while the original Express app continues to use its assignment-ready
-in-memory array.
+The static GitHub Pages and Netlify deployments use browser storage so each
+visitor can try the full message flow without a database. The Express app
+continues to use its assignment-ready in-memory array.
 
 ## Scripts
 
@@ -45,7 +44,7 @@ in-memory array.
 npm start     # Start the app
 npm run dev   # Start with automatic restarts
 npm test      # Run route tests
-npm run build # Create the production Sites build
+npm run build # Validate the static deployment
 ```
 
 ## Project structure
@@ -53,6 +52,7 @@ npm run build # Create the production Sites build
 ```text
 .
 ├── public/stylesheets/  # Site styles
+├── docs/                # Static GitHub Pages and Netlify deployment
 ├── routes/              # Express routes and in-memory data
 ├── test/                # Route tests
 ├── views/               # EJS pages and partials

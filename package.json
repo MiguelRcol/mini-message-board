@@ -4,9 +4,8 @@
   "description": "A small Express and EJS message board.",
   "main": "server.cjs",
   "scripts": {
-    "build": "vinext build",
+    "build": "node --check docs/app.js",
     "dev": "nodemon server.cjs",
-    "site:dev": "vinext dev",
     "start": "node server.cjs",
     "test": "node --test"
   },
@@ -20,34 +19,10 @@
   "license": "MIT",
   "dependencies": {
     "ejs": "^6.0.1",
-    "express": "^5.2.1",
-    "next": "^16.3.3",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "express": "^5.2.1"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "^1.54.0",
-    "@cloudflare/workers-types": "^5.20260825.1",
-    "@mdx-js/rollup": "^3.1.1",
-    "@openai/sites-vite-plugin": "^0.2.0",
-    "@types/node": "^22.19.19",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.2",
-    "@vitejs/plugin-rsc": "^0.5.34",
     "nodemon": "^3.1.14",
-    "react-server-dom-webpack": "^19.2.8",
-    "supertest": "^7.2.2",
-    "typescript": "^5.9.3",
-    "vinext": "^1.0.0-beta.8",
-    "vite": "^8.2.2",
-    "wrangler": "^4.126.0"
-  },
-  "allowScripts": {
-    "sharp@0.35.3": true,
-    "sharp@0.34.5": true,
-    "workerd@1.20260825.1": true,
-    "esbuild@0.28.1": true
-  },
-  "type": "module"
+    "supertest": "^7.2.2"
+  }
 }
