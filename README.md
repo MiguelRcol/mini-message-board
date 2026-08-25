@@ -29,12 +29,18 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+The production build is also configured for OpenAI Sites. The hosted version
+uses browser storage so each visitor can try the full message flow without a
+database, while the original Express app continues to use its assignment-ready
+in-memory array.
+
 ## Scripts
 
 ```bash
 npm start     # Start the app
 npm run dev   # Start with automatic restarts
 npm test      # Run route tests
+npm run build # Create the production Sites build
 ```
 
 ## Project structure
@@ -45,8 +51,8 @@ npm test      # Run route tests
 ├── routes/              # Express routes and in-memory data
 ├── test/                # Route tests
 ├── views/               # EJS pages and partials
-├── app.js               # Express application setup
-└── server.js            # HTTP server entry point
+├── app.cjs              # Express application setup
+└── server.cjs           # HTTP server entry point
 ```
 
 Messages are stored in memory, so new submissions reset whenever the server restarts. This is intentional for the scope of the project.

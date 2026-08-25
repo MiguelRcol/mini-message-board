@@ -1,7 +1,7 @@
 const assert = require("node:assert/strict");
 const { describe, it } = require("node:test");
 const request = require("supertest");
-const app = require("../app");
+const app = require("../app.cjs");
 
 describe("message board routes", () => {
   it("renders the index with the sample messages", async () => {

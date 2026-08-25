@@ -1,6 +1,6 @@
 const path = require("node:path");
 const express = require("express");
-const indexRouter = require("./routes/index");
+const indexRouter = require("./routes/index.cjs");
 
 const app = express();
 
