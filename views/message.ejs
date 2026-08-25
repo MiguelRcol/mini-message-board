@@ -1,0 +1,23 @@
+<%- include("partials/header") %>
+
+<section class="detail-page">
+  <a class="back-link" href="/">← Back to all messages</a>
+  <article class="detail-card">
+    <div class="quote-mark" aria-hidden="true">“</div>
+    <p class="detail-message"><%= message.text %></p>
+    <div class="detail-author">
+      <div class="avatar avatar-large" aria-hidden="true"><%= message.user.charAt(0).toUpperCase() %></div>
+      <div>
+        <h1><%= message.user %></h1>
+        <time datetime="<%= message.added.toISOString() %>"><%= formatDate(message.added) %></time>
+      </div>
+    </div>
+    <span class="detail-label">Echo #<%= String(message.id).padStart(2, "0") %></span>
+  </article>
+  <div class="detail-actions">
+    <p>Have something to add?</p>
+    <a class="button button-primary" href="/new">Write a message <span aria-hidden="true">↗</span></a>
+  </div>
+</section>
+
+<%- include("partials/footer") %>
